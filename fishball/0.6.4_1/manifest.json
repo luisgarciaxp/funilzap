@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/global.css" ],
+      "js": [ "assets/index.ts-loader.js" ],
+      "matches": [ "*://web.whatsapp.com/*" ]
+   } ],
+   "description": "Desbloqueie o potencial do seu Whatsapp Web, otimize seu atendimento e aumente suas conversões!",
+   "externally_connectable": {
+      "matches": [ "*://web.whatsapp.com/*" ]
+   },
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "64": "icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh3C2y3EnU40qIumAAZoIKPbYDs6XfL4Ad/98AL+UGMyodJvT6lyUafwtRPNl46Pf+XC7QYBd24sPxtY68ZbJfTL0pYiYG4opkjemqRgw1OFFzMr4gd2xEDauSpbvQpLshj+dYgRqCvcJT3SbzicNK5yMN7WsP2Sbjg1yxabtV2Ny/iCGMXPVbsGiF10Gx/tYJBH/7MJxOiYVWJUZ/YbBj5N9n+p5mWkzEGBfPthv+Y0j8i9sqpU5WzqtE59P6BVMQdFdIjlRFgwi60CLkvMZjKjWyBVcwLF/kRDWsberbMLe2w297jZl/A/s+NGQtzhnB+AREXXlJgTaD+tE67F1rwIDAQAB",
+   "manifest_version": 3,
+   "name": "FunilZap",
+   "options_page": "dashboard.html",
+   "permissions": [ "storage", "unlimitedStorage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.4",
+   "version_name": "0.6.4",
+   "web_accessible_resources": [ {
+      "matches": [ "*://web.whatsapp.com/*" ],
+      "resources": [ "static/js/chunk-0f0e246a.js", "static/js/chunk-7a2a1854.js", "static/js/chunk-19c1a2bd.js", "static/js/chunk-44873892.js", "static/js/chunk-31319f41.js", "static/js/chunk-9710b720.js", "static/js/chunk-7eb9346b.js" ],
+      "use_dynamic_url": true
+   } ]
+}
